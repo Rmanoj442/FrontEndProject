@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Page</title>
+    
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <script type="text/javascript">
+        function fun()
+        {
+            alert("your flight booked successfully! go to Home Page")
+        }
+
+    </script>
+</head>
+<body>
+    <div class="booking-form-box">
+        <div class="block">
+            <a href="index.html" class="logo">Home</a>
+        </div>
+        <div class="radio-btn">
+            <input type="radio" name="check" class="btn" checked><span>Round-Trip</span>
+            <input type="radio" name="check" class="btn"><span>One-Way</span>
+            <input type="radio" name="check" class="btn"><span>Multy-City</span>
+        </div>
+  
+        <div class="booking-form">
+            <form onsubmit="fun()" action="index.html">
+            <label>Flying From</label>
+            <input type="text" class="form-control" placeholder="City or Airport" required>
+            <label>Flying To</label>
+            <input type="text" class="form-control" placeholder="City or Airport" required>
+
+            <div class="input-grp">
+                <label>Departing</label>
+                <input type="date" class="form-control select-date" required>
+            </div>
+
+            <div class="input-grp">
+                <label>Returning</label>
+                <input type="date" class="form-control select-date" required>
+            </div>
+
+            <div class="input-grp">
+                <label>Adults</label>
+                <input type="number" class="form-control " value="1" required>
+            </div>
+
+            <div class="input-grp">
+                <label>Children</label>
+                <input type="number" class="form-control " value="0" required>
+            </div>
+
+            <div class="input-grp">
+                <label>Travel Class</label>
+                <select class="custom-select" required>
+                    <option value="1">Economy Class</option>
+                    <option value="2">Business Class</option>
+                </select>
+            </div>
+
+            <div class="input-grp">
+                <button type="submit" class="btn btn-primary flight">Book Flight</button>
+            </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

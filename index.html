@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Travel Website</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" >
+        function toggleMenu()
+        {
+            const  menuToggle=document.querySelector(".toggle");
+            const  nevigation=document.querySelector(".nevigation");
+            menuToggle.classList.toggle('active');
+            nevigation.classList.toggle('active');
+        }
+    </script>
+</head>
+<body>
+    <section>
+        <header>
+            <a href="#" class="logo">Travel</a>
+            <div class="toggle" onclick="toggleMenu();"></div>
+        </header>
+
+        <div class="content">
+            <h2>Dream<br>Trip</h2>
+        </div>
+
+        <ul class="sci">
+            <li><a href="www.facebook.com"><img src="facebook.png"></a></li>
+            <li><a href="www.twitter.com"><img src="twitter.png"></a></li>
+            <li><a href="www.instagram.com"><img src="instagram.png"></a></li>
+        </ul>
+
+        <div class="nevigation">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="tour.html">Tour</a>
+                </li>
+                <li>
+                    <a href="booking.html">Booking</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="contect.html">Contact</a>
+                </li>
+            </ul>
+
+        </div>
+    </section>
+</body>
+</html>
