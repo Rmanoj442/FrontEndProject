@@ -1,0 +1,141 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    background: url("p4.jpg");
+}
+
+.main-container
+{
+    margin: 10% auto 0;
+}
+
+.block1
+{
+    float:left;
+	width:50%%;
+	padding:10px;
+	box-sizing:border-box;
+}
+.block
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 4px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.block a
+{
+    position: relative;
+    color: #015b75;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+h3
+{
+    font-size: 5em;
+    line-height: 1em;
+    color: #010101;
+    font-family: 'Kaushan Script', cursive;
+    align-items: right;
+}
+
+.booking-form-box
+{
+    padding: 20px;
+    max-width: 400px;
+    border: 1px solid #ced4da;
+    margin: 10% auto 0;
+    align-items:center;
+}
+
+.booking-form
+{
+    padding: 20px 20px ;
+
+}
+
+.booking-form label
+{
+    margin-bottom: 5px;
+    margin-top: 10px;
+    font-size: 12px;
+    color: #000;
+}
+
+input::placeholder
+{
+    color: #fff;
+}
+
+.input-grp
+{
+    width: 151px;
+    display: inline-block;
+}
+
+.form-control
+{
+    font-size: 12px;
+    border-radius: 0;
+    color: #fff;
+    background: transparent;
+    box-shadow: none;
+}
+
+.select-date::-webkit-inner-spin-button,
+.select-date::-webkit-outer-spin-button
+{
+    -webkit-appearance: none;
+    margin: 0;
+
+}
+
+.select-date::-webkit-calender-picker-indicator
+{
+    background : transparent;
+}
+
+.custom-select
+{
+    color: #fff;
+    font-size: 12px;
+    border: 1px solid #ced4da;
+    box-shadow: none;
+    border-radius: 0;
+    background: transparent;
+
+}
+
+.custom-select option
+{
+    color: #333;
+}
+.flight
+{
+    width: 100%;
+    padding: 9px 0;
+    font-size: 12px;
+    border:1px solid #ced4da ;
+    background: transparent;
+    box-shadow: none;
+    border-radius: 0;
+}
+
+.flight:hover
+{
+    background-color: #fff;
+    color: #000;
+    transition: 0.5s;
+}
